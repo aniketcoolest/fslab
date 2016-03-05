@@ -62,45 +62,6 @@ public:
         f << pack();
         f.close();
     }
-#if 0
-        for(int i=buffer.length();i<100;i++)
-            temp+='$';
-                    buffer+=temp;
-                    cout<<buffer;
-                    fstream fp1;
-                    fp1.open("data1.txt",ios::out|ios::app);
-                            // cout<<"\n frm write:"<<buffer;
-                    fp1<<buffer;
-                    fp1.close();
-    }
-
-    void write()
-    {
-    cout<<"\n from write";
-
-    }
-    int insert(string key)
-    {
-        f1.open("file.txt",ios::in);
-        while(!f1.eof())
-        {
-            f1.getline(buffer,100);
-            pos=file.tellp();
-            unpack();
-            if(key==USN)
-                break; f=1}
-        return pos;
-    }
-    void unpack()
-    {
-        while(buffer[i]!=='|')
-                USN+=buffer[i];
-        while(buffer[i]!=='|')
-                name+=buffer[i];
-        while(buffer[i]!=='|')
-                branch+=buffer[i];
-    }
-#endif
 };
 
 void search(string filename, string usn)
